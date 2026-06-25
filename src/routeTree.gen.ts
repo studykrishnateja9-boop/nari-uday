@@ -9,8 +9,110 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TrainingRouteImport } from './routes/training'
+import { Route as StoriesRouteImport } from './routes/stories'
+import { Route as SolutionRouteImport } from './routes/solution'
+import { Route as SignupRouteImport } from './routes/signup'
+import { Route as ProblemRouteImport } from './routes/problem'
+import { Route as NgoRouteImport } from './routes/ngo'
+import { Route as LoginRouteImport } from './routes/login'
+import { Route as JobsRouteImport } from './routes/jobs'
+import { Route as ImpactRouteImport } from './routes/impact'
+import { Route as HowItWorksRouteImport } from './routes/how-it-works'
+import { Route as GovRouteImport } from './routes/gov'
+import { Route as EducationRouteImport } from './routes/education'
+import { Route as DashboardRouteImport } from './routes/dashboard'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as BusinessRouteImport } from './routes/business'
+import { Route as AnalyticsRouteImport } from './routes/analytics'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
+const TrainingRoute = TrainingRouteImport.update({
+  id: '/training',
+  path: '/training',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StoriesRoute = StoriesRouteImport.update({
+  id: '/stories',
+  path: '/stories',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SolutionRoute = SolutionRouteImport.update({
+  id: '/solution',
+  path: '/solution',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SignupRoute = SignupRouteImport.update({
+  id: '/signup',
+  path: '/signup',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProblemRoute = ProblemRouteImport.update({
+  id: '/problem',
+  path: '/problem',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NgoRoute = NgoRouteImport.update({
+  id: '/ngo',
+  path: '/ngo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LoginRoute = LoginRouteImport.update({
+  id: '/login',
+  path: '/login',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const JobsRoute = JobsRouteImport.update({
+  id: '/jobs',
+  path: '/jobs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ImpactRoute = ImpactRouteImport.update({
+  id: '/impact',
+  path: '/impact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HowItWorksRoute = HowItWorksRouteImport.update({
+  id: '/how-it-works',
+  path: '/how-it-works',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GovRoute = GovRouteImport.update({
+  id: '/gov',
+  path: '/gov',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EducationRoute = EducationRouteImport.update({
+  id: '/education',
+  path: '/education',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DashboardRoute = DashboardRouteImport.update({
+  id: '/dashboard',
+  path: '/dashboard',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BusinessRoute = BusinessRouteImport.update({
+  id: '/business',
+  path: '/business',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AnalyticsRoute = AnalyticsRouteImport.update({
+  id: '/analytics',
+  path: '/analytics',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +121,270 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/analytics': typeof AnalyticsRoute
+  '/business': typeof BusinessRoute
+  '/contact': typeof ContactRoute
+  '/dashboard': typeof DashboardRoute
+  '/education': typeof EducationRoute
+  '/gov': typeof GovRoute
+  '/how-it-works': typeof HowItWorksRoute
+  '/impact': typeof ImpactRoute
+  '/jobs': typeof JobsRoute
+  '/login': typeof LoginRoute
+  '/ngo': typeof NgoRoute
+  '/problem': typeof ProblemRoute
+  '/signup': typeof SignupRoute
+  '/solution': typeof SolutionRoute
+  '/stories': typeof StoriesRoute
+  '/training': typeof TrainingRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/analytics': typeof AnalyticsRoute
+  '/business': typeof BusinessRoute
+  '/contact': typeof ContactRoute
+  '/dashboard': typeof DashboardRoute
+  '/education': typeof EducationRoute
+  '/gov': typeof GovRoute
+  '/how-it-works': typeof HowItWorksRoute
+  '/impact': typeof ImpactRoute
+  '/jobs': typeof JobsRoute
+  '/login': typeof LoginRoute
+  '/ngo': typeof NgoRoute
+  '/problem': typeof ProblemRoute
+  '/signup': typeof SignupRoute
+  '/solution': typeof SolutionRoute
+  '/stories': typeof StoriesRoute
+  '/training': typeof TrainingRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/analytics': typeof AnalyticsRoute
+  '/business': typeof BusinessRoute
+  '/contact': typeof ContactRoute
+  '/dashboard': typeof DashboardRoute
+  '/education': typeof EducationRoute
+  '/gov': typeof GovRoute
+  '/how-it-works': typeof HowItWorksRoute
+  '/impact': typeof ImpactRoute
+  '/jobs': typeof JobsRoute
+  '/login': typeof LoginRoute
+  '/ngo': typeof NgoRoute
+  '/problem': typeof ProblemRoute
+  '/signup': typeof SignupRoute
+  '/solution': typeof SolutionRoute
+  '/stories': typeof StoriesRoute
+  '/training': typeof TrainingRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/analytics'
+    | '/business'
+    | '/contact'
+    | '/dashboard'
+    | '/education'
+    | '/gov'
+    | '/how-it-works'
+    | '/impact'
+    | '/jobs'
+    | '/login'
+    | '/ngo'
+    | '/problem'
+    | '/signup'
+    | '/solution'
+    | '/stories'
+    | '/training'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/analytics'
+    | '/business'
+    | '/contact'
+    | '/dashboard'
+    | '/education'
+    | '/gov'
+    | '/how-it-works'
+    | '/impact'
+    | '/jobs'
+    | '/login'
+    | '/ngo'
+    | '/problem'
+    | '/signup'
+    | '/solution'
+    | '/stories'
+    | '/training'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/analytics'
+    | '/business'
+    | '/contact'
+    | '/dashboard'
+    | '/education'
+    | '/gov'
+    | '/how-it-works'
+    | '/impact'
+    | '/jobs'
+    | '/login'
+    | '/ngo'
+    | '/problem'
+    | '/signup'
+    | '/solution'
+    | '/stories'
+    | '/training'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  AnalyticsRoute: typeof AnalyticsRoute
+  BusinessRoute: typeof BusinessRoute
+  ContactRoute: typeof ContactRoute
+  DashboardRoute: typeof DashboardRoute
+  EducationRoute: typeof EducationRoute
+  GovRoute: typeof GovRoute
+  HowItWorksRoute: typeof HowItWorksRoute
+  ImpactRoute: typeof ImpactRoute
+  JobsRoute: typeof JobsRoute
+  LoginRoute: typeof LoginRoute
+  NgoRoute: typeof NgoRoute
+  ProblemRoute: typeof ProblemRoute
+  SignupRoute: typeof SignupRoute
+  SolutionRoute: typeof SolutionRoute
+  StoriesRoute: typeof StoriesRoute
+  TrainingRoute: typeof TrainingRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/training': {
+      id: '/training'
+      path: '/training'
+      fullPath: '/training'
+      preLoaderRoute: typeof TrainingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/stories': {
+      id: '/stories'
+      path: '/stories'
+      fullPath: '/stories'
+      preLoaderRoute: typeof StoriesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/solution': {
+      id: '/solution'
+      path: '/solution'
+      fullPath: '/solution'
+      preLoaderRoute: typeof SolutionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/signup': {
+      id: '/signup'
+      path: '/signup'
+      fullPath: '/signup'
+      preLoaderRoute: typeof SignupRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/problem': {
+      id: '/problem'
+      path: '/problem'
+      fullPath: '/problem'
+      preLoaderRoute: typeof ProblemRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ngo': {
+      id: '/ngo'
+      path: '/ngo'
+      fullPath: '/ngo'
+      preLoaderRoute: typeof NgoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/login': {
+      id: '/login'
+      path: '/login'
+      fullPath: '/login'
+      preLoaderRoute: typeof LoginRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/jobs': {
+      id: '/jobs'
+      path: '/jobs'
+      fullPath: '/jobs'
+      preLoaderRoute: typeof JobsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/impact': {
+      id: '/impact'
+      path: '/impact'
+      fullPath: '/impact'
+      preLoaderRoute: typeof ImpactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/how-it-works': {
+      id: '/how-it-works'
+      path: '/how-it-works'
+      fullPath: '/how-it-works'
+      preLoaderRoute: typeof HowItWorksRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gov': {
+      id: '/gov'
+      path: '/gov'
+      fullPath: '/gov'
+      preLoaderRoute: typeof GovRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/education': {
+      id: '/education'
+      path: '/education'
+      fullPath: '/education'
+      preLoaderRoute: typeof EducationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/dashboard': {
+      id: '/dashboard'
+      path: '/dashboard'
+      fullPath: '/dashboard'
+      preLoaderRoute: typeof DashboardRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/business': {
+      id: '/business'
+      path: '/business'
+      fullPath: '/business'
+      preLoaderRoute: typeof BusinessRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/analytics': {
+      id: '/analytics'
+      path: '/analytics'
+      fullPath: '/analytics'
+      preLoaderRoute: typeof AnalyticsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,6 +397,23 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  AnalyticsRoute: AnalyticsRoute,
+  BusinessRoute: BusinessRoute,
+  ContactRoute: ContactRoute,
+  DashboardRoute: DashboardRoute,
+  EducationRoute: EducationRoute,
+  GovRoute: GovRoute,
+  HowItWorksRoute: HowItWorksRoute,
+  ImpactRoute: ImpactRoute,
+  JobsRoute: JobsRoute,
+  LoginRoute: LoginRoute,
+  NgoRoute: NgoRoute,
+  ProblemRoute: ProblemRoute,
+  SignupRoute: SignupRoute,
+  SolutionRoute: SolutionRoute,
+  StoriesRoute: StoriesRoute,
+  TrainingRoute: TrainingRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
