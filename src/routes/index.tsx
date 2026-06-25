@@ -397,5 +397,3 @@ function CTA() {
     </section>
   );
 }
-  );
-}
