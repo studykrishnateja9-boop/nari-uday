@@ -3,6 +3,7 @@ import { Link } from "@tanstack/react-router";
 import { ArrowRight, Sparkles, Quote, ShieldCheck, Languages, WifiOff, MessageSquare } from "lucide-react";
 import { PageShell } from "../components/site/page-shell";
 import { BangladeshMap } from "../components/site/bangladesh-map";
+import { Reveal } from "../components/site/reveal";
 import { HERO_STATS, INCOME_GROWTH, STORIES, PARTNERS, PROBLEM_STATS } from "../lib/mock-data";
 import {
   ResponsiveContainer,
@@ -32,15 +33,15 @@ function Index() {
   return (
     <PageShell>
       <Hero />
-      <LiveStats />
-      <Problem />
-      <EcosystemFlow />
-      <AIFeatures />
-      <ImpactChart />
-      <Stories />
-      <Partners />
-      <Faq />
-      <CTA />
+      <Reveal><LiveStats /></Reveal>
+      <Reveal><Problem /></Reveal>
+      <Reveal><EcosystemFlow /></Reveal>
+      <Reveal><AIFeatures /></Reveal>
+      <Reveal><ImpactChart /></Reveal>
+      <Reveal><Stories /></Reveal>
+      <Reveal><Partners /></Reveal>
+      <Reveal><Faq /></Reveal>
+      <Reveal><CTA /></Reveal>
     </PageShell>
   );
 }
