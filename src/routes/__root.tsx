@@ -80,11 +80,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Sutara — AI for Rural Women & Children in Bangladesh" },
       { name: "description", content: "An AI-powered ecosystem that helps rural Bangladeshi women earn from home while keeping children in school. Skill training, jobs, micro-business, and education tracking — in one platform." },
       { name: "author", content: "Sutara" },
-      { property: "og:title", content: "Sutara — Weaving rural potential into national prosperity" },
-      { property: "og:description", content: "AI skill training, jobs, micro-business hub, and child education tracking for rural Bangladesh." },
+      { property: "og:title", content: "Sutara — AI for Rural Women & Children in Bangladesh" },
+      { property: "og:description", content: "An AI-powered ecosystem that helps rural Bangladeshi women earn from home while keeping children in school. Skill training, jobs, micro-business, and education tracking — in one platform." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@SutaraAI" },
+      { name: "twitter:title", content: "Sutara — AI for Rural Women & Children in Bangladesh" },
+      { name: "twitter:description", content: "An AI-powered ecosystem that helps rural Bangladeshi women earn from home while keeping children in school. Skill training, jobs, micro-business, and education tracking — in one platform." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/51734442-f054-4f22-bbe1-870f32d39b5e/id-preview-f988ffd6--5df9696f-6478-4065-81dc-8b1d72d695a1.lovable.app-1782459735257.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/51734442-f054-4f22-bbe1-870f32d39b5e/id-preview-f988ffd6--5df9696f-6478-4065-81dc-8b1d72d695a1.lovable.app-1782459735257.png" },
     ],
     links: [
       {
